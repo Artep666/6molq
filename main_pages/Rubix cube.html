@@ -14,7 +14,7 @@ flex-direction: column;
 min-height: 100vh;
 }
  main, aside, footer{
-    background-color: rgb(232, 227, 255);
+    background-color: rgba(232, 227, 255, 0.568);
     box-shadow: 0px 0px 5px black;
     padding: 10px;
     margin: 5px;
@@ -43,7 +43,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(232, 227, 255);
+  background-color: rgba(220, 213, 252, 0.589);
   margin: 5px;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 h5{
 text-align: center;
-
+color: white;
 }
 #myBtn {
   display: none;
@@ -116,6 +116,18 @@ text-align: center;
   background-image: linear-gradient(to bottom right, rgb(19, 0, 105), rgb(155, 0, 85));
 
 }
+h2,ol{
+
+  text-align: left;
+  color: white;
+}
+p{
+  color: white;
+}
+img{ 
+  width:800px;max-width: 100%;
+  height: auto;}
+
 </style>
 
 
@@ -134,17 +146,15 @@ text-align: center;
 
 
           <div class="topnav" id="myTopnav">
-            <a href="itried.html" class="active">Home</a>
-            <a href="DnD.html">Dnd bb</a>
-            <a href="Coding.html">Coding</a>
-            <a href="Rubix cube.html">Rubix cube</a>
-            <a href="Drawing.html">Drawing</a>
+            <a href="itried.html" class="active"><b>Home</b></a>
+            <a href="DnD.html"><b>Dnd bb</b></a>
+            <a href="Coding.html"><b>Coding</b></a>
+            <a href="Rubix cube.html"><b>Rubix cube</b></a>
+            <a href="Drawing.html"><b>Drawing</b></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars">¯\_(ツ)_/¯</i>
             </a>
           </div>
-          
-     
           
           <script>
           function myFunction() {
@@ -161,7 +171,35 @@ text-align: center;
 
       <div class="main-wrapper"> 
 
-          <main class="page-main">main</main>
+          <main class="page-main">
+          
+            <img src="rubiks.jpg">
+              <h2>What is a rubik's cube?</h2>
+              <p>Where’s the Rubik’s Cube from? Who invented it? Looking for more info on the Rubik’s Cube? You’ve come to the right place!
+
+                The Rubik’s Cube was invented in 1974 by Ernõ Rubik, a Hungarian architecture professor. Rubik later used the Cube as a learning exercise to teach his students about 3-dimensional spaces. Little did he know his “Magic Cube” (as he originally named it) would become one of world’s most famous puzzles of all time!
+                
+                By the 1980’s, the Rubik’s Cube was a worldwide craze selling millions of Cubes every year and cementing its legacy into pop culture. Featured in The Simpsons, The Big Bang Theory, a Spice Girls music video, and major Hollywood movies, the popularity of the Rubik’s Cube continued to grow around the world.</p>
+
+              <p>For more information:<a href="https://rubiks.com/en-US/">Rubik’s.com</a></p>
+                <hr><hr>
+  
+                <h2>Types of rubik's cubes</h2>
+              <p>
+                <ol>
+                  <li>Pocket Cube = 2x2x2.</li>
+                  <li>Professor's Cube = 5x5x5.</li>
+                  <li> V-Cube 6 = 6x6x6 (a non-Rubik's product)</li>
+                  <li> V-Cube 7 = 7x7x7 (another non-Rubik's product)</li>
+                  <li>Rubik’s Cube (the original) = 3x3x3</li>
+                  <li> Rubik’s Revenge = 4x4x4</li>
+                
+  
+                </ol>
+              </p>
+              <hr><hr></p>
+    
+          </main>
 
           <aside class="page-aside">aside</aside>
 
