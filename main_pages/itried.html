@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6please</title>
 <style>
+  .bored{
+    align-items: center;
+    height:266px;
+    background-image: linear-gradient(to bottom right, rgb(85, 211, 233),rgb(233, 0, 97));
+  }
 body{
   background-image: linear-gradient(to bottom right, rgb(39, 7, 126), rgb(255, 8, 214));}
 .wrapper{
@@ -115,6 +120,78 @@ text-align: center;
   background-image: linear-gradient(to bottom right, rgb(19, 0, 105), rgb(155, 0, 85));
 
 }
+h2,h3,ol{
+
+text-align: left;
+color: white;
+}
+p{
+color: white;
+}
+img{ 
+width:800px;max-width: 100%;
+height: auto;}
+h5{
+text-align: center;
+color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 </style>
 
 
@@ -160,13 +237,54 @@ text-align: center;
             
             <h3>Heyoooo</h3>
             
-            <p>My name is petra and this respresents my hobbies.Why dumbass?Well because i am a dumbass .Easy as that!</p>
-            <br>
-            <p>Now for the site,u just have to click which of my dumbass side u want to check out with the buttons under all this kinda useless information!</p>
+            
+            <p>For the site,u just have to click which of my dumbass side u want to check out with the buttons under all this kinda useless information!</p>
+            <div class="bored">
+              <p>Bored out of your mind?Try bored button.</p>
+                <a href="https://www.boredbutton.com/">https://www.boredbutton.com/</a>
+                
+            </div>
           </main>
 
 
-          <aside class="page-aside">aside</aside>
+          <aside class="page-aside">
+            <div style="text-align:center">
+              <h2>MEME CATS BB</h2>
+              <p>Click on the images below:</p>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <img src="pep.jpg" alt="cat" style="width:100%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="bep.jpg" alt="cat" style="width:100%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="wewe.jpg" alt="cat" style="width:100%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="dep.jpg" alt="cat" style="width:100%" onclick="myFunction(this);">
+              </div>
+            </div>
+            
+            <div class="container">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              <img id="expandedImg" style="width:100%">
+              <div id="imgtext"></div>
+            </div>
+            
+            <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+            </script>
+
+          </aside>
 
       </div>
 
